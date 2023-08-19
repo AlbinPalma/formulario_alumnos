@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario de Ingreso de Alumnos</title>
+</head>
+<body>
+    <div class="center-container">
+        <div class="container">
+            <h1 class="burning-text">Formulario de Ingreso de Alumnos</h1>
+            <form>
+                <div class="input-container">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-container">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="input-container">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="input-container">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+            <div class="input-container">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="predeterminado"> </option>
+                    <option value="matematicas">Redes de Computadora</option>
+                    <option value="historia">Analisis de Sistemas II</option>
+                    <option value="ciencias">Arquitectura de Computadora</option>
+                    <option value="literatura">Etica Profesional</option>
+                    <option value="literatura">Desarrollo Web</option>
+                </select>
+            </div>
+                <div class="input-container">
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span class="icon">&#128190;</span> Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
